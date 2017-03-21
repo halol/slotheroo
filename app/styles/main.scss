@@ -1,12 +1,134 @@
-$icon-font-path: '../fonts/';
+//$icon-font-path: '../fonts/';
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i|Open+Sans:300,400,700,800');
+@import "flatly/variables";
+$secondary: #00CCBC;
+$primary: #7716A4;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "flatly/bootswatch";
+
 
 
 body {
+  // font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+.welcome {
+  background-color: $primary;
+  padding: 3rem 0;
+  min-height: 650px;
+  color: white;
+  position: relative;
+  .headline {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  .sub {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .image-cover {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    > img {
+      object-fit: fill;
+      height: 100%;
+      width: auto;
+    }
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  small {
+    margin-top: 10px;
+    color: rgba(white, .7);
+  }
+  .signup,
+  .logo {
+    z-index: 100;
+    position: relative;
+  }
+}
+
+.benefits {
+  padding: 10rem 0;
+  .card {
+    > img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+
+.signup {
+  margin-top: 100px;
+}
+
+.testimonials {
+  background-color: #F7F7F8;
+  height: 80vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+.slide {
+  height: 100%;
+}
+.carousel {
+  p {
+    font-size: 3rem;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+  }
+  .carousel-indicators {
+    position: relative;
+    li {
+      border-color: $brand-primary;
+      &.active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.fw-200 {
+  font-weight: 200;
+}
+
+
+.newsletter {
+  background-color: $primary;
+  padding: 7rem 0;
+  color: white;
+}
+
+
+footer {
+  padding: 7rem 0;
+}
+
+* {
+  //outline: 1px solid rgba(red, .5);
+}
+
+.ucreate {
+  margin: 20px 0;
 }
