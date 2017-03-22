@@ -29,6 +29,7 @@ body {
   position: relative;
   background-image: url(../images/slothtile_72_rgb_800_800.jpg);
   position: relative;
+
   &:before {
     left: 0;
     top: 0;
@@ -89,6 +90,20 @@ body {
   .signup {
     padding: 5rem 0;
   }
+  @media (max-width: $screen-md-min) {
+    padding-top: 3rem;
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+    .headline {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &:after {
+      right: 0;
+      background-size: 70%;
+      bottom: -144px;
+    }
+  }
 }
 
 .benefits {
@@ -121,7 +136,7 @@ body {
   justify-content: center;
 }
 .slide {
-  height: 100%;
+  height: 300px;
 }
 .carousel {
   p {
@@ -174,8 +189,22 @@ body {
 
 .newsletter {
   background-color: $primary;
-  padding: 10rem 0;
+  padding: 30rem 0;
   color: white;
+  background-image: url(../images/slothtile_72_rgb_800_800.jpg);
+  position: relative;
+  background-size: contain;
+  &:before {
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(darken($primary, 10%), 0.7);
+    // background-blend-mode: multiply;
+  }
 }
 
 .menu {
