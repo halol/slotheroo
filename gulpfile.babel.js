@@ -7,6 +7,7 @@ import {stream as wiredep} from 'wiredep';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+const Pageres = require('pageres');
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -31,6 +32,15 @@ gulp.task('scripts', () => {
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('pageres', () => {
+  return new Pageres({
+      delay: 2
+    })
+    .src('localhost:9000', ['1280x750', '1024x768', 'iphone 6', 'ipad 2'], {crop: false, filename: '<%= date %> - <%= size %>'})
+    .dest('./screenshots')
+    .run();
 });
 
 function lint(files, options) {

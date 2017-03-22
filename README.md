@@ -3,6 +3,7 @@
 ## TODO:
 * Responsive
   - Headline
+  - Benefits
   - Testimonials
   - Newsletter
   - Menu

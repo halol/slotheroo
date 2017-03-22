@@ -93,7 +93,7 @@ body {
   @media (max-width: $screen-md-min) {
     padding-top: 3rem;
     padding-bottom: 150px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     .headline {
       font-size: 24px;
       line-height: 36px;
@@ -107,7 +107,7 @@ body {
 }
 
 .benefits {
-  padding: 10rem 0;
+  padding: 20rem 0;
   .card {
     > img {
       width: 150px;
@@ -130,13 +130,13 @@ body {
 
 .testimonials {
   background-color: #F7F7F8;
-  height: 80vh;
+  padding: 10rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .slide {
-  height: 300px;
+  height: 250px;
 }
 .carousel {
   p {
