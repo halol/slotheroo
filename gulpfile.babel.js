@@ -38,7 +38,7 @@ gulp.task('pageres', () => {
   return new Pageres({
       delay: 2
     })
-    .src('slotheroo.netlify.com', ['1280x750', 'iphone 5s'], {crop: false, format: 'jpg', filename: '<%= date %> <%= time %> - <%= size %>'})
+    .src('slotheroo.com', ['1280x750', 'iphone 5s'], {crop: false, format: 'jpg', filename: '<%= date %> <%= time %> - <%= size %>'})
     .dest('./screenshots')
     .run();
 });

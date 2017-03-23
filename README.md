@@ -2,11 +2,11 @@
 
 ## TODO:
 * Responsive
-  - Headline
+  - ~Headline~
   - Benefits
-  - Testimonials
+  - ~Testimonials~
   - Newsletter
-  - Menu
+  - ~Menu~
   - Footer (Center on mobile)
 * Social icons
 * Connect MailChimp
@@ -14,7 +14,7 @@
   - Thank you page instead of inline
 * Create GA Events
 * Assign FullStory
-* HotJar?
+* ~Optimizely integration~
 * Add more sloths around the content
 
 ## Build
