@@ -10,6 +10,8 @@
   - Footer (Center on mobile)
 * Social icons
 * Connect MailChimp
+  - Responses styles
+  - Thank you page instead of inline
 * Create GA Events
 * Assign FullStory
 * HotJar?

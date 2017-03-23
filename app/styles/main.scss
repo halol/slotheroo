@@ -28,6 +28,7 @@ body {
   color: white;
   position: relative;
   background-image: url(../images/slothtile_72_rgb_800_800.jpg);
+  background-attachment: fixed;
   position: relative;
 
   &:before {
@@ -192,6 +193,7 @@ body {
   padding: 30rem 0;
   color: white;
   background-image: url(../images/slothtile_72_rgb_800_800.jpg);
+  background-attachment: fixed;
   position: relative;
   background-size: contain;
   &:before {
