@@ -187,11 +187,14 @@ body {
 .fw-200 {
   font-weight: 200;
 }
+.text-white {
+  color: white;
+}
 
 
 .newsletter {
   background-color: $primary;
-  padding: 30rem 0;
+  padding: 15rem 0;
   color: white;
   background-image: url(../images/slothtile_72_rgb_800_800.jpg);
   background-attachment: fixed;
