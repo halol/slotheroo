@@ -46,14 +46,14 @@ body {
     content: '';
     z-index: 50;
     position: absolute;
-    right: 10%;
-    bottom: -206px;
-    background-image: url(../images/sloth2.png);
+    right: 30%;
+    bottom: -164px;
+    background-image: url(../images/sloth2_header.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom right;
 
-    width: 600px;
+    width: 500px;
     height: 100%;
   }
   .headline {
@@ -89,7 +89,7 @@ body {
     position: relative;
   }
   .signup {
-    padding: 5rem 0;
+    padding-top: 5rem;
   }
   @media (max-width: $screen-md-min) {
     padding-top: 3rem;
@@ -102,9 +102,22 @@ body {
     &:after {
       right: 0;
       background-size: 70%;
-      bottom: -144px;
+      bottom: -115px;
     }
   }
+}
+
+.buzz {
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  z-index: 100;
+}
+.text-small {
+  font-size: 10px;
+  color: rgba(white, 0.7);
+  display: inline-block;
+  padding: 5px 0;
 }
 
 .benefits {
