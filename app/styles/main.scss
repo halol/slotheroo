@@ -191,7 +191,13 @@ body {
   color: white;
 }
 
-
+.partners {
+  padding: 15rem;
+  background-color: $gray-darker;
+}
+.mc-field-group {
+  margin-bottom: 20px;
+}
 .newsletter {
   background-color: $primary;
   padding: 15rem 0;
