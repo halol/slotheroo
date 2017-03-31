@@ -16,7 +16,9 @@ body {
   margin: 0;
   padding: 0
 }
-
+* {
+  outline: 1px solid green;
+}
 .z-100 {
   z-index: 100;
   position: relative;
@@ -362,14 +364,30 @@ footer {
 .our-story {
   background: $primary;
   color: white;
+  padding-top: 7rem;
   h1, h2, h3 {
     color: white;
   }
-  padding: 7rem 0;
+
   p {
-    padding: 7rem 0;
+    padding-top: 7rem;
     line-height: 180%;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: 200;
+  }
+
+  // overflow: hidden;
+  //height: 600px;
+  // vertical-align: top;
+  .mockup {
+    margin-top: -200px;
+  }
+  @media (max-width: $screen-sm-max) {
+    .mockup {
+      margin: 0 auto;
+    }
+    p {
+      font-size: 100%;
+    }
   }
 }
