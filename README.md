@@ -8,12 +8,12 @@
   - Newsletter
   - ~Menu~
   - Footer (Center on mobile)
-* Social icons
+* ~Social icons~
 * Connect MailChimp
   - Responses styles
-  - Thank you page instead of inline
+  - ~Thank you page instead of inline~
 * Create GA Events
-* Assign FullStory
+* ~Assign FullStory~
 * ~Optimizely integration~
 * Add more sloths around the content
 
