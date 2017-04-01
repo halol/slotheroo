@@ -14,10 +14,21 @@ $primary: #7716A4;
 body {
   // font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
-  padding: 0
+  padding: 0;
+  color: $text-color;
 }
-* {
-  //outline: 1px solid green;
+.product-hunt {
+  // padding: 2em;
+  background-color: #DA552F;
+  color: white;
+  margin-bottom: 0;
+  display: none;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .z-100 {
   z-index: 100;

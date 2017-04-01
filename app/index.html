@@ -79,6 +79,11 @@
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+  <section class="alert product-hunt alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    Thanks Product Hunters for your <a href="https://www.producthunt.com/posts/slotheroo">support!</a>
+  </section>
   <header class="welcome">
     <div class="buzz hiddex-sm hidden-xs">
       <img src="images/buzz.png" alt="Spread the word!">
@@ -93,10 +98,8 @@
         <div class="col-lg-6 col-md-6 col-sm-5 col-xs-4 text-right">
           <ul class="list-unstyled list-inline social-icons">
             <li>
-              <a href="https://twitter.com/slotheroo" target="_blank"><img src="images/logo-twitter.svg" alt=""></a>
+              <a href="https://twitter.com/slotheroo" target="_blank"><img src="images/logo-twitter.svg" alt="" data-gatrack="Top,Twitter,Click"></a>
             </li>
-            <!-- <li><a href=""><img src="images/logo-instagram.svg" alt=""></a></li>
-              <li><a href=""><img src="images/logo-youtube.svg" alt=""></a></li> -->
           </ul>
         </div>
       </div>
@@ -132,7 +135,7 @@
                         <div class="response" id="mce-success-response" style="display:none"></div>
                       </div>
                       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e687b42a40448b55fd35f6ea5_e32fe020dc" tabindex="-1" value=""></div>
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e687b42a40448b55fd35f6ea5_e32fe020dc" tabindex="-1" value="" data-gatrack="Top,Form,Sign up"></div>
                       <p class="text-small text-center">We don't send spam. Promise</p>
                     </div>
                   </form>
@@ -163,21 +166,21 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 reveal">
           <div class="text-center">
-            <img src="images/17713-200.png" alt="" class="" height="160">
+            <img src="images/17713-200.png" alt="" class="" height="160" data-gatrack="Features,Lethargic,Click">
             <h3>Lethargic</h3>
             <p>Don’t hate the wait. Life in the slow lane.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 reveal">
           <div class="text-center">
-            <img src="images/rock-out-icon.svg" alt="" height="160">
+            <img src="images/rock-out-icon.svg" alt="" height="160" data-gatrack="Features,Incomparable,Click">
             <h3>Incomparable</h3>
             <p>Slothers don’t swim in the mainstream.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 reveal">
           <div class="text-center">
-            <img src="images/street-name-post-icon.svg" alt="" height="160">
+            <img src="images/street-name-post-icon.svg" alt="" height="160"  data-gatrack="Features,Ambigious,Click">
             <h3>Ambiguous</h3>
             <p>Choosing is hard. We don’t let you.</p>
           </div>
@@ -330,7 +333,7 @@
                   <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e687b42a40448b55fd35f6ea5_e32fe020dc" tabindex="-1" value=""></div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e687b42a40448b55fd35f6ea5_e32fe020dc" tabindex="-1" value="" data-gatrack="Footer,Form,Sign up"></div>
                 <p class="text-small text-center">We don't send spam. Promise</p>
               </div>
             </form>
@@ -358,7 +361,7 @@
       <div class="row">
         <div class="col-lg-6">
           <p class="text-muted"><small>Made by the team at</small></p>
-          <a href="https://www.ucreate.it" target="_blank"><img src="images/ucreate_logo_2015.png" alt="ucreate.it" height="24"></a></small>
+          <a href="https://www.ucreate.it" target="_blank"><img src="images/ucreate_logo_2015.png" alt="ucreate.it" height="24" data-gatrack="Footers,ucreate logo,Click"></a></small>
         </div>
         <div class="col-lg-6 text-right" style="padding-top: 2rem;">
           <p class="text-muted" style="font-size: 10px;"><small>Sloth Pattern by <a href="http://taishabosher.com/sloth-pattern" target="_blank">Taisha Bosher</a></small></p>
@@ -424,5 +427,18 @@
      description: "Rather than conforming to mainstream life become a slother and live life in the slow lane."
   }
   </script>
+  <script>
+  $(document).ready(function() {
+    $(document).on('click', '[data-gatrack]', function(e) {
+        var $link = $(this);
+        var trackData = $link.data('gatrack');
+        if (!trackData) {
+            return;
+        }
+        var trackParams = ['_trackEvent'].concat(trackData.split(','));
+        _gaq.push(trackParams);
+    });
+});
+</script>
 </body>
 </html>
